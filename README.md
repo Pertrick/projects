@@ -1,2 +1,2 @@
 # git-github
-Just tryint things out
+Just trying things out
