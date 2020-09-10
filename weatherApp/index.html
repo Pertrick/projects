@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Description" content="Weather App">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Weather app</title>
+        <link rel="icon" href="img/cloudyweather_cloud_inpart_day_wind_thunder_sunny_rain_darkness_nublad_1459.ico" type="image/icon type">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="manifest"  href="./WeatherAppManifest.json">
+        <meta name="theme-color" content="#FFE1C4">
+        <link rel="apple-touch-icon" href="./images/icons/icon-96x96.png">
+        <link rel="apple-touch-icon" href="./images/icons/icon-152x152.png">
+        <link rel="apple-touch-icon" href="./images/icons/icon-512x512.png">
+        
+    </head>
+    <body>
+
+        
+        <div id="searchContainer">
+           <label for="input"></label>
+         <input class="searchControl" type="text" placeholder="CityName or Zipcode" id="searchInput">
+        
+
+        <label for="submitButton"></label>
+            <button class="searchControl" id="searchBtn">Search</button>          
+        </div>
+        
+     
+        <div id="weatherContainer">
+            <div id="weatherDescription">
+                <h1 id="cityHeader"></h1>
+                <div id="date">Thursday 10 January 2020</div>
+                <div id="weatherMain">
+                    <div id="temperature"></div>
+                    <div id="weatherDescriptionHeader"></div>
+                    <div><img id="documentIconImg"></div>
+                </div>
+                <hr>
+                <div id="windSpeed" class="bottomDetails"></div>
+                <div id="humidity" class="bottomDetails"></div>
+            </div>
+        </div>
+
+       
+        
+        <script>
+             if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker
+                    .register("js/worker.js")
+                    .then((reg) => console.log('service worker registered', reg))
+                    .catch((err) => console.error(err));
+            });
+        }
+            </script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

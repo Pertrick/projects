@@ -1,0 +1,146 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#label1{
+    visibility:hidden;
+}
+
+body{
+    background: url('../img/default4.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#fff;
+    text-shadow: 2px 2px 1px black;
+    font-family:'Polation Linotype' , sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#weatherContainer{
+    
+    box-shadow: 1px 1px 5px black;
+    padding: 50px;
+    border-radius: 10px;
+    visibility: hidden;
+
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+
+}
+
+#weatherContainer h1{
+    margin:5px;
+    font-size:42px;
+    font-family:'Polation Linotype' , sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#searchContainer{
+    padding:15px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+#searchContainer input{
+    /*width:200px;*/
+    width: 100%;
+    max-width: 200px;
+    padding:7px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.1);
+    /*border-radius: 16px 0px 16px 0px;*/
+    border-bottom: 2px solid #f8b195;
+
+    color: #313130;
+    font-size: 16px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+
+#searchContainer input:focus{
+    background-color: rgba(255,255,255,0.8);
+    color:#555;
+    
+
+}
+
+#searchContainer button{
+    background-color: #355c7b;
+    color:#fff;
+    width:75px;
+    font-size: 15px;
+    font-weight: 300;
+    padding:8px 7px;
+   /* border-radius: 15px 0px 15px 0px;*/
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+#searchContainer button:focus{
+    transition: 0.1s ease-in;
+    background-color: #355c7b;
+    border: 3px solid #fff;
+}
+
+.searchControl{
+box-shadow:2px 2px 5px black;
+border:none;
+border-radius: 5px;
+padding:5px;
+}
+
+
+#weatherContainer h1{
+    margin-top: 38px;
+}
+
+
+#weatherMain{
+   /* display:block;
+    margin-bottom:20px;
+    */
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+#weatherMain div{
+    display:inline-block;
+}
+
+#weatherDescriptionHeader{
+     font-size:28px;
+     vertical-align:50%;
+}
+
+#cityHeader{
+    
+    text-shadow:1px 5px rgba(0,0,0,0.4);
+}
+
+#temperature{
+    font-size:100px;
+    vertical-align: 25%;
+    text-shadow:2px 9px rgba(0,0,0,0.5);
+}
+
+.bottomDetails{
+    display:block;
+    font-size:24px;
+    text-align:right;
+}
+
+hr{
+    margin-bottom:20px;
+}

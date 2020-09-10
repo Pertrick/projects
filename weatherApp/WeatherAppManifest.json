@@ -1,0 +1,37 @@
+{
+    "short_name": "Weather",
+    "name": "WeatherApp",
+    "description": "Weather forecast information",
+    "icons": [
+      {
+        "src": "./img/Overcast.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "./img/Sunny-Interval.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+
+      {
+        "src": "./img/weather.png.png",
+        "type": "image/png",
+        "sizes": "512x512"
+    },
+      {
+        "src": "./img/weather (1).png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any maskable"
+    }
+    ],
+    "start_url": "./index.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "theme_color": "#3367D6",
+    "orientation": "portrait-primary"
+    
+  }
+
+ 
